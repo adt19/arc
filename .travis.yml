@@ -22,6 +22,9 @@ after_success:
   - npm install codecov -g
   - codecov
 before_deploy:
+  - ls dist/BRAND
+  - ls $demo_build
+  - echo 'DONE'
   - if [[ $TRAVIS_TAG ]]; then
       if [[ $PWD != *$PJ_dist ]]; then
         cd $PJ_dist;
@@ -29,7 +32,9 @@ before_deploy:
     fi;
 deploy:
   - provider: pages
-    local-dir: $demo_build
-    github-token: $github
-    skip-cleanup: true
-    keep-history: true
+    local_dir: $demo_build
+    github_token: $github
+    skip_cleanup: true
+    keep_history: true
+    deployment_file: true
+
