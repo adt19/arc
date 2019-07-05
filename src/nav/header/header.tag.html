@@ -1,0 +1,11 @@
+<div class='logo'>
+  logo
+</div>
+<div class='menu'>
+  <a class='link' *ngFor='let i of links' [routerLink]='i.link'>
+    {{ i.text }}
+  </a>
+  <div class='find'>
+    <input placeholder='Search' />
+  </div>
+</div>

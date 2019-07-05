@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'normalize.css'
+@import 'styles/vars'
+
+html, body
+  display: inline-block
+  width: 100%
+
+body
+  color: var(--c-bk)
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+
+body
+  background-size: 20px 20px
+  background-image: linear-gradient(to right, var(--c-grid) 1px, transparent 1px), linear-gradient(to bottom, var(--c-grid) 1px, var(--c-grid-bg) 1px)
+
+a
+  text-decoration: none

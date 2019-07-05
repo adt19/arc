@@ -21,10 +21,10 @@ cache:
 after_success:
   - npm install codecov -g
   - codecov
-before_deploy:
   - ls dist/BRAND
   - ls $demo_build
   - echo 'DONE'
+before_deploy:
   - if [[ $TRAVIS_TAG ]]; then
       if [[ $PWD != *$PJ_dist ]]; then
         cd $PJ_dist;
