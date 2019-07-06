@@ -1,19 +1,14 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppTag } from './app.tag';
+import { Spec } from '@chakray/utils/testing';
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppTag
-      ],
-    }).compileComponents();
-  }));
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppTag);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+import { AppTag as Tag } from './app.tag';
+
+Spec.tag(Tag, {
+  schemas: [NO_ERRORS_SCHEMA],
+}, (ref) => {
+  let t: Tag;
+  beforeEach(() => {
+    t = ref.tag;
   });
-
 });

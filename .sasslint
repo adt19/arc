@@ -77,6 +77,8 @@ rules:
 
         - cursor
         - border
+        - border-top
+        - border-right
         - border-bottom
         - border-radius
         - border-color
