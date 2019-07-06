@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'brand';
+  font-weight: normal;
+  font-style: normal;
+  src: local('brand'),
+    url('/assets/brand.woff?a') format('woff');
+}

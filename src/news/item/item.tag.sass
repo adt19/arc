@@ -6,9 +6,27 @@
     color: var(--c-item-title)
     font-weight: 600
   .cover
+    display: flex
+    justify-content: center
+    align-item: center
     margin: 20px 0 10px
     background: var(--c-item-img-bg)
     height: 160px
+    ct-lzmg
+      width: unset
+      cti
+        position: absolute
+        display: flex
+        align-items: center
+        height: 100%
+        color: var(--c-grid)
+        font-size: 32px
+      &.on cti
+        display: none
+      &::ng-deep img
+        position: unset
+        z-index: 100
+        width: unset
   .desc
     display: -webkit-box
     height: 200px
