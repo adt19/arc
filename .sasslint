@@ -61,6 +61,12 @@ rules:
         - flex-flow
         - flex-wrap
         - grid
+        - grid-template-areas
+        - grid-template-columns
+        - grid-template-rows
+        - grid-column
+        - grid-area
+        - grid-gap
 
         - visibility
         - opacity

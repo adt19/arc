@@ -1,0 +1,52 @@
+\:host.mobile
+  align-items: unset
+  padding: 0
+  n-find::ng-deep
+    background: var(--c-find-bg)
+    padding: 8px 10px
+    cti
+      left: 20px
+    cti, input::placeholder
+      color: var(--c-find-bg)
+    input
+      background: var(--c-find-input-bg)
+      color: var(--c-find-fg)
+      caret-color: var(--c-find-fg)
+  .logo
+    position: absolute
+    top: 5px
+    margin-left: 18px
+    padding: 3px
+    width: 36px
+    height: 36px
+    font-size: 12px
+  .title
+    display: block
+    color: var(--c-nav-a-fg)
+    span
+      flex: 1
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 45px
+    .toggle
+      position: absolute
+      top: 0
+      right: 0
+      padding: 15px 15px 9px
+      font-size: 18px
+  .menu
+    flex-flow: column
+    height: unset
+  .on .links
+    height: 160px
+    transition: height .5s ease-in
+  .links
+    flex-flow: column
+    height: 0
+    overflow: hidden
+    transition: height .5s ease-in
+  .link
+    box-sizing: border-box
+    padding: 10px
+    width: 100%

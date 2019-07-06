@@ -2,6 +2,11 @@
   display: flex
   align-items: center
   padding: 20px
+  .title
+    display: none
+  n-find
+    flex: 1
+    width: auto
   .logo
     box-sizing: border-box
     display: flex
@@ -18,37 +23,15 @@
     display: flex
     background: var(--c-header-bg)
     height: 50px
-    .link
-      display: flex
-      justify-content: center
-      align-items: center
-      margin: 1px
-      background: var(--c-nav-item-bg)
-      width: 120px
-      color: var(--c-nav-a-fg)
-      &:hover, &:active, &:visited
-        color: var(--c-nav-a-fg-dim)
-  .find
-    position: relative
-    flex: 1
-    margin: 8px 15px
-    width: auto
-    cti
-      position: absolute
-      top: 10px
-      left: 10px
-      color: var(--c-nav-a-fg)
-      font-size: 14px
-    input
-      box-sizing: border-box
-      outline: 0
-      border: 0
-      border-radius: 8px
-      background: var(--c-nav-item-bg)
-      padding: 10px 28px
-      width: 100%
-      color: var(--c-nav-a-fg)
-      font-size: 12px
-      caret-color: var(--c-nav-a-fg)
-      &::placeholder
-        color: var(--c-nav-a-fg)
+  .links
+    display: flex
+  .link
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1px
+    background: var(--c-nav-item-bg)
+    width: 120px
+    color: var(--c-nav-a-fg)
+    &:hover, &:active, &:visited
+      color: var(--c-nav-a-fg-dim)

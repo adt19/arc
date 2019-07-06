@@ -1,6 +1,7 @@
 <div class='items'>
-  <n-item class='item' *ngFor='let i of items' data='i'></n-item>
+  <n-item [class.mobile]='mobile'
+    class='item' *ngFor='let i of items' data='i'></n-item>
 </div>
 <div class='more'>
-  Load More
+  <div class='btn'> Load More </div>
 </div>

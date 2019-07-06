@@ -5,7 +5,7 @@ import { fmtDt } from './fmt-dt';
 @Component({
   selector: 'n-item',
   templateUrl: './item.tag.html',
-  styleUrls: ['./item.tag.sass']
+  styleUrls: ['./item.tag.sass', './mobile.sass']
 })
 export class NewsItemTag {
   @Input() set data(v) {

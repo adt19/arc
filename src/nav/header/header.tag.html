@@ -1,12 +1,17 @@
 <div class='logo'>
   logo
 </div>
-<div class='menu'>
-  <a class='link' *ngFor='let i of links' [routerLink]='i.link'>
-    {{ i.text }}
-  </a>
-  <div class='find'>
-    <cti key='app.search'></cti>
-    <input placeholder='Search' />
+<div class='menu' [class.on]='on'>
+  <div class='title'>
+    <span> News </span>
+    <div class='toggle' (click)='toggle()'>
+      <cti key='app.list'></cti>
+    </div>
   </div>
+  <div class='links'>
+    <a class='link' *ngFor='let i of links' [routerLink]='i.link'>
+      {{ i.text }}
+    </a>
+  </div>
+  <n-find (event)='find($event)'></n-find>
 </div>
