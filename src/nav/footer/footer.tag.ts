@@ -1,6 +1,6 @@
 import { HostBinding, Component } from '@angular/core';
 
-import { links } from '../model/links';
+import { links } from 'src/nav/model/link';
 
 @Component({
   selector: 'n-footer',
