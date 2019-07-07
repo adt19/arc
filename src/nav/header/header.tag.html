@@ -13,5 +13,5 @@
       {{ i.text }}
     </a>
   </div>
-  <n-find (event)='find($event)'></n-find>
+  <n-find [text]='query' (event)='find($event)'></n-find>
 </div>

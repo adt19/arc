@@ -16,8 +16,11 @@
       * overflow ellipsis
     - time
       * local time
+    - virtual scroll
   - empty list
   - load more
+    * disable to prevent duplicates
+    * loading indicator
 
 # footer
 

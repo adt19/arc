@@ -1,4 +1,4 @@
-<n-header [class.mobile]='mobile'></n-header>
+<n-header [class.mobile]='mobile' [query]='query' (event)='nav($event)'></n-header>
 <div class='box'>
   <router-outlet></router-outlet>
 </div>

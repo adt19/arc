@@ -1,7 +1,12 @@
 <div class='items'>
   <n-item [class.mobile]='mobile'
-    class='item' *ngFor='let i of items' data='i'></n-item>
+    class='item' *ngFor='let i of ic.items' [data]='i'></n-item>
 </div>
+<span *ngIf='ic.items.length === 0 && !loading'>
+    Oops, nothing related to the search term: "{{ query }}" </span>
 <div class='more'>
-  <div class='btn'> Load More </div>
+  <div class='btn' (click)='load()' [class.on]='!loading'>
+    <ng-container *ngIf='loading'> Loading ... </ng-container>
+    <ng-container *ngIf='!loading'> Load More </ng-container>
+  </div>
 </div>
