@@ -1,6 +1,8 @@
+import { environment as env } from '../environments/environment';
+
 export const brand = {
   _: {
-    cssUrl: '/assets/brand.css',
+    cssUrl: env.base + '/assets/brand.css',
     ns: 'app',
     ff: 'brand',
   },
