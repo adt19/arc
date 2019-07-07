@@ -8,7 +8,7 @@ Spec.pdr(Pdr, {}, (ref) => {
     t = ref.pdr;
   });
   ref.prop('load', () => {
-    it ('return observable', (done) => {
+    it('return observable', (done) => {
       t.load({ query: '', page: 0 }).subscribe(d => {
         expect(d.length).toEqual(15);
         done();
@@ -16,7 +16,7 @@ Spec.pdr(Pdr, {}, (ref) => {
     });
     describe('when reset is true', () => {
       it('will refresh items', (done) => {
-        t.items = [1,2,3] as any;
+        t.items = [1, 2, 3] as any;
         t.load({ reset: true, page: 1 }).subscribe(d => {
           expect(t.items.length).toEqual(15);
           done();
