@@ -1,7 +1,8 @@
 <div class='items'>
-  <n-item [class.mobile]='mobile'
-    class='item' *ngFor='let i of ic.items' [data]='i'></n-item>
+  <n-item [class.mobile]='mobile' class='item'
+    *ngFor='let i of ic.items' [data]='i'></n-item>
 </div>
+
 <span *ngIf='ic.items.length === 0 && !loading'>
     Oops, nothing related to the search term: "{{ query }}" </span>
 <div class='more'>

@@ -1,38 +1,45 @@
 # header
 
-  - logo
-  - links
-  - search
+  - [x] logo
+  - [x] links
+  - [x] search
+  - tested
 
 # news list
 
-  - items
-    - image
+  - [ ] items
+    - [x] image
       * lazy load
       * thumb sized
       * cover sized
       * broken fallback
-    - desc
+    - [x] desc
       * overflow ellipsis
-    - time
+    - [x] time
       * local time
     - virtual scroll
-  - empty list
-  - load more
+      - cdk does not have good solution for grid layout https://stackoverflow.com/a/53887154
+      - try other solutions instead
+  - [x] empty list
+  - [x] load more
     * disable to prevent duplicates
     * loading indicator
+  - tested
 
 # footer
 
-  - shared links with header
+  - [x] shared links with header
+  - tested
 
 # rwd
 
-  - header
+  - [x] header
     - transformed
     - menu expand
     - search
-  - list
+  - [x] list
     - layout change
-  - footer
+    - shortened time
+  - [x] footer
     - hide
+  - tested
