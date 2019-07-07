@@ -9,8 +9,8 @@
 
 ```
   npm i
-  ng serve
-  ng test
+  npx ng serve
+  npx ng test
 ```
 
 ## build
