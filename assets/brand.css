@@ -3,5 +3,6 @@
   font-weight: normal;
   font-style: normal;
   src: local('brand'),
-    url('/assets/brand.woff?a') format('woff');
+    url('/assets/brand.woff?a') format('woff'),
+    url('/arc/assets/brand.woff?a') format('woff');
 }
