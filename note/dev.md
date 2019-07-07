@@ -1,3 +1,24 @@
+# dev
+
+## requirements
+
+  - linux/macox
+  - node 10.16
+
+## installation/serve/test
+
+```
+  npm i
+  ng serve
+  ng test
+```
+
+## build
+
+```
+  npm build
+```
+
 # travis ci
 
   > gh-pages deploy issue
