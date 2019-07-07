@@ -9,11 +9,12 @@ const sample = 'Lorem Ipsum is simply dummy text of the printing and typesetting
 function gen(length, p) {
   return Array.from({ length }, (v, i) => {
     const pi = i + p * length;
+    const now = new Date();
     return new Item({
       title: 'Item - ' + pi,
-      desc: sample.substr(0, sample.length * (pi % 9 + 1) / 10),
+      desc: sample,
       img: env.base + '/assets/img/brand_12' + (pi % 4 === 0 ? '' : '8') + '.png',
-      updatedAt: (Date.now() - pi * 12345_000) / 1000
+      updatedAt: (now.getTime() - now.getTimezoneOffset() * 60_000) / 1000
     });
   });
 }

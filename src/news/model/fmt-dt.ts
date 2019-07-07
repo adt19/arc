@@ -5,10 +5,10 @@ function pad(v) {
 }
 
 export function fmtDt(dt, short = false) {
-  const y = dt.getFullYear();
-  const mn = months[dt.getMonth()];
-  const d = pad(dt.getDate());
-  const h = pad(dt.getHours());
-  const mt = pad(dt.getMinutes());
+  const y = dt.getUTCFullYear();
+  const mn = months[dt.getUTCMonth()];
+  const d = pad(dt.getUTCDate());
+  const h = pad(dt.getUTCHours());
+  const mt = pad(dt.getUTCMinutes());
   return short ? `${d} ${mn}, ${h}:${mt}` : `${d} ${mn}, ${y} ${h}:${mt}`;
 }
