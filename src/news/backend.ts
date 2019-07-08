@@ -14,7 +14,7 @@ function gen(length, p) {
       title: 'Item - ' + pi,
       desc: sample,
       img: env.base + '/assets/img/brand_12' + (pi % 4 === 0 ? '' : '8') + '.png',
-      updatedAt: (now.getTime() - now.getTimezoneOffset() * 60_000) / 1000
+      updatedAt: (now.getTime() - now.getTimezoneOffset() * 60_000 - 12345_000 * pi) / 1000
     });
   });
 }
@@ -24,7 +24,7 @@ export const pageSize = 15;
 export function backend(params) {
   const { page, query = '' } = params;
   const inx = page * pageSize;
-  const r = gen(200, page).filter(i => i.title.includes(query))
+  const r = gen(200, 0).filter(i => i.title.includes(query))
     .slice(inx, inx + pageSize);
   return of(r).pipe(delay(1000));
 }
