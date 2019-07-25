@@ -4,7 +4,7 @@ import { Input, EventEmitter, Output, HostBinding, Component, OnDestroy } from '
   selector: 'n-find',
   template: `
     <cti key='app.search' (click)='trigger()'></cti>
-    <input [value]='text' (keydown)='kd($event)'
+    <input [value]='text' (keydown)='kd($event)' maxlength='30'
       (input)='update($event)' placeholder='Search' />
   `,
   styleUrls: ['./find.tag.sass']
